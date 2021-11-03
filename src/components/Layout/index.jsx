@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.scss";
+import { Container } from "../Container";
 
 export const Layout = ({ children }) => {
-  return <div className="container">{children}</div>;
+  return <Container>{children}</Container>;
 };

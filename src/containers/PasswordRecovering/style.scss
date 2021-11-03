@@ -1,0 +1,55 @@
+.password-recovering {
+  display: grid;
+  grid-auto-rows: min-content;
+  justify-content: center;
+  align-content: center;
+  min-height: inherit;
+}
+
+.password-recovering__logo {
+  width: var(--logo-width);
+  justify-self: center;
+  margin-bottom: 48px;
+}
+
+.password-recovering__icon {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  margin-bottom: 24px;
+}
+
+.password-recovering__icon img {
+  width: 80px;
+}
+
+.password-recovering__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.password-recovering__subtitle {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.password-recovering__resend {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  justify-self: center;
+  justify-content: center;
+}
+
+.password-recovering__button {
+  margin-bottom: 24px;
+  max-width: 300px;
+  justify-self: center;
+}

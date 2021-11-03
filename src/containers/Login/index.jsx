@@ -37,7 +37,7 @@ export const Login = () => {
         </form>
         <button
           type="button"
-          className="button button--green text--size--md login__button-login"
+          className="button button--green  login__button-login"
         >
           Login
         </button>
@@ -46,14 +46,7 @@ export const Login = () => {
         </a>
       </section>
       <section>
-        <button
-          type="button"
-          className="
-              button button--border-green
-              text--size--md
-              login__button-sign-up
-            "
-        >
+        <button type="button" className="button button--border-green">
           Sign up
         </button>
       </section>

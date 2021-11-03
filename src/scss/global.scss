@@ -1,5 +1,15 @@
+@import "../scss/media.scss";
+
 body {
   font-family: "Quicksand", sans-serif;
+  font-size: var(--text-sm);
+  color: var(--dark);
+  @include respond-to("md") {
+    font-size: var(--text-md);
+  }
+  @include respond-to("lg") {
+    font-size: var(--text-lg);
+  }
 }
 
 #app {
