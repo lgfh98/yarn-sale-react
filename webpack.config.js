@@ -20,6 +20,10 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
   plugins: [
@@ -28,4 +32,9 @@ module.exports = {
       filename: "index.html",
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    compress: true,
+    port: 3000,
+  },
 };
