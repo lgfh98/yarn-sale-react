@@ -1,7 +1,11 @@
-$base-color: #ff0000;
-$color: rgba(black, 0.88);
-
 body {
-  background-color: $base-color;
-  color: $color;
+  font-family: "Quicksand", sans-serif;
+}
+
+#app {
+  min-height: inherit;
+}
+
+a {
+  display: inline-block;
 }

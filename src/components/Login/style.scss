@@ -1,0 +1,53 @@
+@import "../../scss/media.scss";
+
+$max-width: 500px;
+
+.login {
+  --max-width: #{$max-width};
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  align-content: space-between;
+  grid-auto-rows: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: inherit;
+  position: relative;
+  padding: 10px 0;
+  @include respond-to($max-width) {
+    align-content: center;
+    padding: 0;
+  }
+}
+
+.login__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__logo {
+  width: var(--logo-width);
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__label-container {
+  margin-bottom: 8px;
+}
+
+.login__label-text {
+  font-weight: 700;
+}
+
+.login__forgot-password {
+  margin: 12px 0;
+  align-self: center;
+}
+
+.login__button-login {
+  margin-top: 24px;
+}
+
+.login__button-sign-up {
+}

@@ -1,0 +1,19 @@
+.button {
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  height: 52px;
+}
+
+.button--green {
+  background-color: var(--hospital-green);
+}
+
+.button--border-green {
+  background-color: var(--white);
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}

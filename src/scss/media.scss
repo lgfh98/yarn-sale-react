@@ -1,0 +1,19 @@
+$breakpoints: (
+  "sm": 640px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px,
+  "2xl": 1536px,
+);
+
+@mixin respond-to($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media (min-width: map-get($breakpoints, $bp)) {
+      @content;
+    }
+  } @else if type-of($bp) == number and unit($bp) == "px" {
+    @media screen and (min-width: $bp) {
+      @content;
+    }
+  }
+}

@@ -1,6 +1,12 @@
 import React from "react";
-import "../scss/global.scss";
+import "../scss/index.scss";
+import { Layout } from "./Layout";
+import { Login } from "./Login";
 
 export const App = () => {
-  return <h1>Hola mundooooo</h1>;
+  return (
+    <Layout>
+      <Login />
+    </Layout>
+  );
 };
